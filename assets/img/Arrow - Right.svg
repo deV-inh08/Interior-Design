@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#919191"/>
+<g id="Home Page 6" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="1180" transform="translate(-1241 -521)" fill="#F2EFED"/>
+<g id="Header">
+<g id="Frame 4">
+<rect x="-149.5" y="-17.5" width="213" height="59" rx="29.5" stroke="#373739"/>
+<g id="Iconly/Light/Arrow - Right">
+<g id="Arrow - Right">
+<path id="Stroke 1" d="M17.0294 6.44707L6.42281 17.0537" stroke="#22201F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke 3" d="M8.49179 6.46445L17.0294 6.44606L17.0117 14.9844" stroke="#22201F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="1180" fill="white" transform="translate(-1241 -521)"/>
+</clipPath>
+</defs>
+</svg>
