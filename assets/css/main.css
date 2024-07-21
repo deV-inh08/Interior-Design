@@ -1,9 +1,148 @@
+:root {
+    --background: #F2EFED;
+    --textBlack: #22201F;
+    --textWhite: #FFFFFF;
+    --Grey: #373739;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
     font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 4.6rem;
+    background-color: var(--background);
+    padding-block: 3.2rem;
+}
+
+.menu > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 1170px;
+    margin-inline: auto;
+}
+
+.menu__list {
+    display: flex;
+    width: 100%;
+    max-width: 41rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__item {
+    padding-inline: 1.75rem;
+}
+
+.menu__list > .menu__item:nth-of-type(5) {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+} 
+
+.menu__item > .icon--down {
+    display: inline;
+    font-size: 1.2rem;;
+}
+
+.menu__item--link {
+    color: var(--textBlack);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.btn__action{
+    border: none;
+    padding: 13px 31px;
+    border-radius: 29px;
+    background: var(--textBlack);
+}
+
+.btn__action--link {
+    color: var(--textWhite);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#main {
+    padding-top: 173px;
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+#main > .title {
+    width: 100%;
+}
+
+.main__title {
+    color: var(--textBlack);
+    font-size: 136px;
+    font-weight: 700;
+    line-height: 142px; 
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+.description > .desc {
+    width: 60.1rem;
+    color: var(--Grey);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.4rem; 
+}
+
+.btn__contact {
+    display: flex;
+    align-items: center;
+    /* height: 24px; */
+    border: 1px solid var(--Grey);
+    padding: 18px 40px;
+    border-radius: 30px;
+    gap: 10px
+}
+
+.btn__contact > .btn__link {
+    color: var(--textBlack);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.block__imgage {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.block__imgage > .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
