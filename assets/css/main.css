@@ -60,9 +60,11 @@ a {
     gap: 0.9rem;
 } 
 
-.menu__item > .icon--down {
+.menu__item > .icon {
     display: inline;
-    font-size: 1.2rem;;
+    font-size: 1.2rem;
+    padding: 5px 4px;
+    cursor: pointer;
 }
 
 .menu__item--link {
@@ -70,6 +72,12 @@ a {
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
+}
+
+.line {
+    height: 3px;
+    width: 30px;
+    background-color: #000;
 }
 
 .btn__action{
