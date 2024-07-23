@@ -43,6 +43,7 @@ a {
 }
 
 .menu__list {
+    position: relative;
     display: flex;
     width: 100%;
     max-width: 41rem;
@@ -58,7 +59,11 @@ a {
     display: flex;
     align-items: center;
     gap: 0.9rem;
-} 
+    padding: 0 0 0 1.75rem;
+}
+.menu__list > .menu__item:first-child {
+    padding: 0 1.75rem 0 0;
+}
 
 .menu__item > .icon {
     display: inline;
@@ -75,9 +80,14 @@ a {
 }
 
 .line {
-    height: 3px;
-    width: 30px;
+    position: absolute;
+    bottom: -8px;
+    display: inline-block;
+    width: 34px;
+    height: 1px;
     background-color: #000;
+    transition: all 0.25s;
+    display: none;
 }
 
 .btn__action{
@@ -106,9 +116,9 @@ a {
 
 .main__title {
     color: var(--textBlack);
-    font-size: 136px;
+    font-size: 13.6rem;
     font-weight: 700;
-    line-height: 142px; 
+    line-height: 14.2rem; 
 }
 
 .description {
