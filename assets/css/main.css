@@ -1,9 +1,3 @@
-:root {
-    --background: #F2EFED;
-    --textBlack: #22201F;
-    --textWhite: #FFFFFF;
-    --Grey: #373739;
-}
 * {
     padding: 0;
     margin: 0;
@@ -51,6 +45,79 @@ a {
     justify-content: space-between;
 }
 
+.sub__menu {
+    display: none;
+    width: 28rem;
+    height: 36rem;
+    position: absolute;
+    left: 50%;
+    bottom: -36.4rem;
+    background-color: var(--greyWhite);
+    border-radius: 1rem;
+    transition: 0.5s all;
+}
+
+.sub__menu:hover {
+    display: block;
+}
+
+.sub__child {
+    position: absolute;
+    width: 25rem;
+    height: 22.5rem;
+    left: 102%;
+    top: 4rem;
+    z-index: 999;
+}
+
+.sub__child:hover {
+    display: block;
+}
+.sub__menu--item {
+    width: calc(100% - 3rem);
+}
+
+.sub__menu--item:hover{
+    background-color: #aaa4a4;
+}
+
+.sub__menu--item.home:hover .sub__child.home {
+    display: block;
+}
+
+.sub__menu--item.about:hover .sub__child.about {
+    display: block;
+}
+.sub__menu--item.project:hover .sub__child.project {
+    display: block;
+}
+
+.sub__menu--item.blog:hover .sub__child.blog {
+    display: block;
+}
+
+.sub__child--link {
+    line-height: 3.4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--textBlack);
+}
+.sub__menu > div {
+    width: 100%;
+    margin: 3rem 0 3rem 3rem;
+}
+
+.sub__menu--item {
+    padding: 3px 0 3px 0;
+}
+
+.sub__menu--link {
+    color: var(--textBlack);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.4rem;
+}
+
 .menu__item {
     padding-inline: 1.75rem;
 }
@@ -62,7 +129,7 @@ a {
     padding: 0 0 0 1.75rem;
 }
 .menu__list > .menu__item:first-child {
-    padding: 0 1.75rem 0 0;
+    padding: 1rem  1.75rem 1rem 0;
 }
 
 .menu__item > .icon {
@@ -73,10 +140,38 @@ a {
 }
 
 .menu__item--link {
+    position: relative;
     color: var(--textBlack);
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
+}
+
+.list__child {
+    display: none;
+    position: absolute;
+    bottom: -23rem;
+    left: 0;
+    width: 25rem;
+    height: 22rem;
+    border-radius: 10px;
+    background-color: var(--greyWhite);
+    transition: all 0.25s;
+}
+
+.list__child > div {
+    height: calc(100% - 30px);
+    margin: 3rem 0 0 0;
+}
+
+.item__child {
+    padding: 0 0 0 3rem;
+    margin: 1.5rem 0;
+}
+
+.item__child--link {
+    font-size: 2rem;
+    color: var(--textBlack);
 }
 
 .line {
@@ -87,7 +182,23 @@ a {
     height: 1px;
     background-color: #000;
     transition: all 0.25s;
-    display: none;
+}
+.icon__down {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.icon__down::after {
+    content: "";
+    position: absolute;
+    right: -7rem;
+    bottom: -2rem;
+    width: 100px;
+    height: 30px;
+}
+
+.icon__down:hover + ul.sub__menu{
+    display: block;
 }
 
 .btn__action{
@@ -138,7 +249,6 @@ a {
 .btn__contact {
     display: flex;
     align-items: center;
-    /* height: 24px; */
     border: 1px solid var(--Grey);
     padding: 18px 40px;
     border-radius: 30px;
