@@ -5,3 +5,5 @@ let getLine = document.querySelector(".line");
 getIconDown.addEventListener("click", () => {
     
 });
+const getName = document.querySelector("Hello");
+console.log(getName);
